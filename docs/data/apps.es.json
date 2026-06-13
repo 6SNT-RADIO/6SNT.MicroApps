@@ -14,20 +14,20 @@
       "distribution": "Release privado",
       "license": "Propietario",
       "accent": "green",
-      "summary": "Guardian read-only de preflight COM/CAT para estaciones Windows.",
-      "description": "Revisa puertos COM visibles, apps conocidas de radio y configuracion local de rig antes de una sesion, sin abrir el puerto serial ni enviar comandos CAT.",
+      "summary": "Guardián read-only de preflight COM/CAT para estaciones Windows.",
+      "description": "Revisa puertos COM visibles, apps conocidas de radio y configuración local de rig antes de una sesión, sin abrir el puerto serial ni enviar comandos CAT.",
       "notFor": "No es controlador CAT. No ejecuta PTT, TUNE, TX, CW, audio transmitido ni automatismos desatendidos.",
       "features": [
         "Escaneo read-only de puertos COM",
-        "Deteccion de propietario y app visible",
-        "Inferencia de rig desde configuracion local",
+        "Detección de propietario y app visible",
+        "Inferencia de rig desde configuración local",
         "Switch EN/ES dentro de la app",
         "Ejecutable Windows con icono propio"
       ],
       "safety": [
         "No abre puertos seriales para tomar control",
-        "No envia comandos CAT",
-        "No ejecuta acciones relacionadas con transmision"
+        "No envía comandos CAT",
+        "No ejecuta acciones relacionadas con transmisión"
       ],
       "links": {
         "details": "./apps/cpt/",
@@ -51,24 +51,24 @@
       "stage": "Beta",
       "version": "v0.1.0-beta",
       "platform": "Windows",
-      "source": "Fuente publica",
-      "distribution": "Prerelease publico",
+      "source": "Fuente pública",
+      "distribution": "Prerelease público",
       "license": "Apache 2.0",
       "accent": "amber",
-      "summary": "Area local para limpiar, normalizar y exportar logs de radioaficion.",
-      "description": "Importa ADI, ADX, Cabrillo, CSV, XLSX y JSON, normalizando registros hacia flujos ADIF sin sacar los archivos de la maquina.",
+      "summary": "Área local para limpiar, normalizar y exportar logs de radioafición.",
+      "description": "Importa ADI, ADX, Cabrillo, CSV, XLSX y JSON, normalizando registros hacia flujos ADIF sin sacar los archivos de la máquina.",
       "notFor": "No es un logger. No es un servicio cloud. Trabaja sobre copias antes de enviar datos a otro lugar.",
       "features": [
         "ADI / ADX / Cabrillo / CSV / XLSX / JSON",
-        "Revision de duplicados y conflictos por campo",
+        "Revisión de duplicados y conflictos por campo",
         "Datos de trabajo SQLite locales",
-        "Sin cuenta y sin telemetria",
-        "Paginas en ingles y espanol"
+        "Sin cuenta y sin telemetría",
+        "Páginas en inglés y español"
       ],
       "safety": [
         "Usar copias durante la beta",
         "Revisar exports antes de subirlos a servicios externos",
-        "Sin sincronizacion cloud durante operacion normal"
+        "Sin sincronización cloud durante operación normal"
       ],
       "links": {
         "details": "https://6snt-radio.github.io/6SNT.ADIF-HUB/es/",
