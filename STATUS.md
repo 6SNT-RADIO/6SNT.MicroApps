@@ -1,6 +1,6 @@
 # STATUS
 
-State: portal ready for first publish.
+State: published.
 
 Done:
 
@@ -12,12 +12,14 @@ Done:
 - 6SNT.CPT detail pages added in English and Spanish.
 - Local preview verified on desktop and mobile at `http://127.0.0.1:4173/`.
 - README refreshed with public catalog description, badges and troubleshooting.
+- Repository published at `https://github.com/6SNT-RADIO/6SNT.MicroApps`.
+- GitHub Pages enabled from `main:/docs`.
+- Public Pages verified at `https://6snt-radio.github.io/6SNT.MicroApps/`.
 
 Pending:
 
-- Publish `6SNT.MicroApps` repository.
-- Enable GitHub Pages from `main:/docs`.
-- Confirm public URL renders after GitHub Pages build.
+- Add each future micro app when its safe public metadata and screenshots are ready.
+- Decide whether private-release downloads need a separate public distribution path.
 
 Risks:
 
