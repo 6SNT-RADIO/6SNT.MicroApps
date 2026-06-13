@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6SNT Micro Apps</title>
+  <meta name="description" content="Catalogo de microapps 6SNT local-first para flujos Windows de estacion de radio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/apps/cpt/icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body data-page="home">
+  <header><nav class="nav">
+    <a class="brand" href="./"><span class="brand-mark"></span>6SNT.RADIO</a>
+    <div class="nav-links"><a href="#catalog" data-copy="navCatalog"></a><a href="#roadmap" data-copy="navRoadmap"></a><a href="#policy" data-copy="navPolicy"></a></div>
+    <a class="nav-action" href="../" data-lang-link>EN</a>
+  </nav></header>
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker" data-copy="heroKicker"></div>
+          <h1><span data-copy="heroTitleA"></span><br><span class="accent" data-copy="heroTitleB"></span></h1>
+          <p class="hero-copy" data-copy="heroCopy"></p>
+          <div class="hero-actions"><a class="btn primary" href="#catalog" data-copy="ctaCatalog"></a><a class="btn secondary" href="./apps/cpt/" data-copy="ctaCpt"></a></div>
+          <div class="hero-meta" data-meta></div>
+        </div>
+        <div class="instrument" aria-hidden="true">
+          <div class="scope-top"><span>CATALOG BUS</span><span>LOCAL-FIRST</span></div>
+          <div class="scope-body">
+            <div class="scan-line"></div>
+            <div class="trace"><svg viewBox="0 0 320 120"><path d="M0 86 L34 86 L52 42 L74 42 L93 72 L116 72 L138 28 L166 28 L190 62 L224 62 L246 44 L274 44 L320 18"/></svg></div>
+            <div class="scope-readout"><span>APPS<strong>02 LIVE</strong></span><span>QUEUE<strong>10 NEXT</strong></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="catalog">
+      <div class="section-title"><h2 data-copy="catalogTitle"></h2><p data-copy="catalogCopy"></p></div>
+      <div class="filters" data-filters></div>
+      <div class="catalog" data-catalog></div>
+    </section>
+    <section class="section" id="roadmap">
+      <div class="section-title"><h2 data-copy="roadmapTitle"></h2><p data-copy="roadmapCopy"></p></div>
+      <div class="roadmap" data-roadmap></div>
+    </section>
+    <section class="section" id="policy">
+      <div class="section-title"><h2 data-copy="policyTitle"></h2><p data-copy="policyCopy"></p></div>
+      <div class="matrix">
+        <div class="matrix-row"><div class="matrix-key">Fuente</div><div class="matrix-value">Por app. Algunos repositorios son privados y propietarios; las apps publicas declaran su licencia.</div></div>
+        <div class="matrix-row"><div class="matrix-key">Descargas</div><div class="matrix-value">La disponibilidad se indica por app. Los links privados requieren acceso de cuenta.</div></div>
+        <div class="matrix-row"><div class="matrix-key">Seguridad</div><div class="matrix-value">Las apps que tocan radio parten read-only. Cualquier accion capaz de transmitir requiere confirmacion explicita del operador.</div></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="section"><span data-copy="footer"></span><span>Windows | Local-first | Sin telemetria</span></div></footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

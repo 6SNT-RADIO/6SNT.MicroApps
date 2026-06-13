@@ -1,0 +1,100 @@
+{
+  "language": "es",
+  "updated": "2026-06-13",
+  "apps": [
+    {
+      "id": "cpt",
+      "name": "6SNT.CPT",
+      "subtitle": "CAT Port Guardian",
+      "category": "CAT / Serial",
+      "stage": "Estable",
+      "version": "v0.1.0",
+      "platform": "Windows",
+      "source": "Fuente privada",
+      "distribution": "Release privado",
+      "license": "Propietario",
+      "accent": "green",
+      "summary": "Guardian read-only de preflight COM/CAT para estaciones Windows.",
+      "description": "Revisa puertos COM visibles, apps conocidas de radio y configuracion local de rig antes de una sesion, sin abrir el puerto serial ni enviar comandos CAT.",
+      "notFor": "No es controlador CAT. No ejecuta PTT, TUNE, TX, CW, audio transmitido ni automatismos desatendidos.",
+      "features": [
+        "Escaneo read-only de puertos COM",
+        "Deteccion de propietario y app visible",
+        "Inferencia de rig desde configuracion local",
+        "Switch EN/ES dentro de la app",
+        "Ejecutable Windows con icono propio"
+      ],
+      "safety": [
+        "No abre puertos seriales para tomar control",
+        "No envia comandos CAT",
+        "No ejecuta acciones relacionadas con transmision"
+      ],
+      "links": {
+        "details": "./apps/cpt/",
+        "repository": "https://github.com/6SNT-RADIO/6SNT.CPT",
+        "release": "https://github.com/6SNT-RADIO/6SNT.CPT/releases/tag/v0.1.0"
+      },
+      "assets": {
+        "icon": "assets/apps/cpt/icon.png",
+        "screenshot": "assets/apps/cpt/screenshot.png"
+      },
+      "sha256": {
+        "exe": "7EE7183913475C514BF07DF124AB10BF827A005DD48EC6B7A0FD164B79056DEF",
+        "zip": "621EA2F1DA2651B5CCFBA66F33955ECD49264A53F429033BA248822C4A82A7F0"
+      }
+    },
+    {
+      "id": "adif-hub",
+      "name": "6SNT.ADIF-HUB",
+      "subtitle": "Hub local para limpiar logs",
+      "category": "Logbook / ADIF",
+      "stage": "Beta",
+      "version": "v0.1.0-beta",
+      "platform": "Windows",
+      "source": "Fuente publica",
+      "distribution": "Prerelease publico",
+      "license": "Apache 2.0",
+      "accent": "amber",
+      "summary": "Area local para limpiar, normalizar y exportar logs de radioaficion.",
+      "description": "Importa ADI, ADX, Cabrillo, CSV, XLSX y JSON, normalizando registros hacia flujos ADIF sin sacar los archivos de la maquina.",
+      "notFor": "No es un logger. No es un servicio cloud. Trabaja sobre copias antes de enviar datos a otro lugar.",
+      "features": [
+        "ADI / ADX / Cabrillo / CSV / XLSX / JSON",
+        "Revision de duplicados y conflictos por campo",
+        "Datos de trabajo SQLite locales",
+        "Sin cuenta y sin telemetria",
+        "Paginas en ingles y espanol"
+      ],
+      "safety": [
+        "Usar copias durante la beta",
+        "Revisar exports antes de subirlos a servicios externos",
+        "Sin sincronizacion cloud durante operacion normal"
+      ],
+      "links": {
+        "details": "https://6snt-radio.github.io/6SNT.ADIF-HUB/es/",
+        "repository": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB",
+        "release": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB/releases/tag/v0.1.0-beta"
+      },
+      "assets": {
+        "icon": "",
+        "screenshot": "assets/apps/adif-hub/screenshot.png"
+      },
+      "sha256": {
+        "exe": "A0247F749798BB51C562074E5B5065D7F3E0705572D5BDFBEA7C7C2411AE69F3",
+        "zip": ""
+      }
+    }
+  ],
+  "roadmap": [
+    "UDP Packet Inspector",
+    "USB Audio Device Lock",
+    "Audio Chain Doctor",
+    "RF Noise Fingerprint",
+    "SWR Snapshot Tile",
+    "RFI Breaker Hunt",
+    "Digital Message Composer",
+    "Mode Discipline Overlay",
+    "Split Operation Guard",
+    "FT8 Slot Etiquette Advisor"
+  ]
+}
