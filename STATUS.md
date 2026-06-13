@@ -11,6 +11,7 @@ Done:
 - `6SNT.ADIF-HUB` converted to an internal Micro Apps detail page at `/apps/adif-hub/` and `/es/apps/adif-hub/`.
 - `6SNT.ACD` added with English/Spanish metadata, detail pages, icon, screenshot and prerelease download.
 - `6SNT.CPT` and `6SNT.ACD` marked as public repos while keeping proprietary licensing labels.
+- Home readout now derives live app count from catalog data and no longer shows a hardcoded queue count.
 - Direct `Download EXE` links added for apps with published executable assets.
 - Safe screenshots and icon assets added.
 - JSON catalog model added for future microapps.

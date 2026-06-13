@@ -151,6 +151,12 @@ function renderCatalog(apps, filter, allLabel) {
   container.innerHTML = visible.map((app) => appCard(app, copy)).join("");
 }
 
+function renderReadout(catalog) {
+  const liveCount = document.querySelector("[data-live-count]");
+  if (!liveCount) return;
+  liveCount.textContent = `${String(catalog.apps.length).padStart(2, "0")} LIVE`;
+}
+
 function appCard(app, copy) {
   const badgeClass = app.accent === "amber" ? "amber" : "green";
   const icon = app.assets.icon
@@ -185,6 +191,7 @@ function appCard(app, copy) {
 async function renderHome() {
   initChrome();
   const catalog = await loadCatalog(false);
+  renderReadout(catalog);
   renderFilters(catalog.apps);
   renderCatalog(catalog.apps, COPY[getLang()].filters[0], COPY[getLang()].filters[0]);
   const roadmap = document.querySelector("[data-roadmap]");
