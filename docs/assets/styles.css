@@ -108,9 +108,15 @@ h1{font-size:clamp(42px,7vw,84px);line-height:.95;letter-spacing:.02em;font-weig
   background:linear-gradient(180deg,#071018,#04070d);border:1px solid var(--border);border-radius:6px;
   overflow:hidden;display:grid;grid-template-rows:auto 1fr;min-height:506px;
 }
-.app-shot{height:226px;background:#02070b;border-bottom:1px solid var(--border-sub);position:relative;overflow:hidden}
-.app-shot img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92;transition:transform .25s,opacity .25s}
-.app-card:hover .app-shot img{transform:scale(1.02);opacity:1}
+.app-shot{
+  height:236px;background:#02070b;border-bottom:1px solid var(--border-sub);
+  position:relative;overflow:hidden;
+}
+.app-shot img{
+  width:100%;height:100%;object-fit:contain;display:block;opacity:.94;padding:10px;
+  transition:opacity .25s;
+}
+.app-card:hover .app-shot img{opacity:1}
 .app-info{padding:16px;display:grid;gap:13px}
 .app-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .app-name{display:flex;gap:10px;align-items:center}
