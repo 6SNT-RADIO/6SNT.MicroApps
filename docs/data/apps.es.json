@@ -10,8 +10,8 @@
       "stage": "Estable",
       "version": "v0.1.0",
       "platform": "Windows",
-      "source": "Fuente privada",
-      "distribution": "Release privado",
+      "source": "Repo público",
+      "distribution": "Release público",
       "license": "Propietario",
       "accent": "green",
       "summary": "Guardián read-only de preflight COM/CAT para estaciones Windows.",
@@ -90,6 +90,49 @@
       }
     },
     {
+      "id": "acd",
+      "name": "6SNT.ACD",
+      "subtitle": "Audio Chain Doctor",
+      "category": "Audio / Windows",
+      "stage": "Preview",
+      "version": "v0.1.0",
+      "platform": "Windows",
+      "source": "Repo público",
+      "distribution": "Prerelease público",
+      "license": "Propietario",
+      "accent": "green",
+      "summary": "Preflight read-only de cadena de audio y medidor en vivo para estaciones Windows.",
+      "description": "Lee la entrada de audio seleccionada en Windows, muestra nivel RMS, VU, forma de onda, picos y clipping, y permite verificar la ruta de audio local antes de una sesión.",
+      "notFor": "No es mixer, router de audio, administrador de drivers ni controlador de radio. No ejecuta PTT, no controla el transceptor ni cambia el ruteo de audio de Windows.",
+      "features": [
+        "Medidor de entrada en vivo read-only",
+        "Selectores reales de entrada y salida",
+        "Chequeos de VU, forma de onda, peak y clipping",
+        "Switch EN/ES dentro de la app",
+        "Prueba local breve de tono 1 kHz con confirmación"
+      ],
+      "safety": [
+        "No cambia dispositivos de audio predeterminados de Windows",
+        "No cambia volumen, sample rate ni ruteo",
+        "No envía CAT, PTT, TUNE, TX, CW ni macros",
+        "La prueba de tono requiere confirmación explícita del operador"
+      ],
+      "links": {
+        "details": "./apps/acd/",
+        "repository": "https://github.com/6SNT-RADIO/6SNT.ACD",
+        "release": "https://github.com/6SNT-RADIO/6SNT.ACD/releases/tag/v0.1.0",
+        "downloadExe": "https://github.com/6SNT-RADIO/6SNT.ACD/releases/download/v0.1.0/6SNT.ACD.exe"
+      },
+      "assets": {
+        "icon": "assets/apps/acd/icon.png",
+        "screenshot": "assets/apps/acd/screenshot.png"
+      },
+      "sha256": {
+        "exe": "6A542CFCCA11AB735AD702919493352BBD2D2CA285B9EB90DBD6E77B2F4910FA",
+        "zip": ""
+      }
+    },
+    {
       "id": "adif-hub",
       "name": "6SNT.ADIF-HUB",
       "subtitle": "Hub local para limpiar logs",
@@ -134,7 +177,6 @@
   ],
   "roadmap": [
     "UDP Packet Inspector",
-    "Audio Chain Doctor",
     "RF Noise Fingerprint",
     "SWR Snapshot Tile",
     "RFI Breaker Hunt",

@@ -9,6 +9,8 @@ Done:
 - `6SNT.CPT` and `6SNT.ADIF-HUB` added as initial entries.
 - `6SNT.UADL` added with English/Spanish catalog metadata, detail pages and safe assets.
 - `6SNT.ADIF-HUB` converted to an internal Micro Apps detail page at `/apps/adif-hub/` and `/es/apps/adif-hub/`.
+- `6SNT.ACD` added with English/Spanish metadata, detail pages, icon, screenshot and prerelease download.
+- `6SNT.CPT` and `6SNT.ACD` marked as public repos while keeping proprietary licensing labels.
 - Direct `Download EXE` links added for apps with published executable assets.
 - Safe screenshots and icon assets added.
 - JSON catalog model added for future microapps.
@@ -23,9 +25,10 @@ Done:
 Pending:
 
 - Add each future micro app when its safe public metadata and screenshots are ready.
-- Decide whether private-release downloads need a separate public distribution path.
+- Decide whether private-release downloads for future apps need a separate public distribution path.
 
 Risks:
 
 - Private app releases may require GitHub access. Public download strategy should be explicit per app.
+- Public repo visibility does not imply open-source licensing.
 - Do not copy private source or release binaries into this portal.

@@ -27,7 +27,9 @@ https://6snt-radio.github.io/6SNT.MicroApps/es/
 
 `6SNT.MicroApps` is the catalog layer for focused station utilities. Each app should solve one operational problem: preflight, diagnostics, data cleanup, device checks or operator safety.
 
-The portal is static and public. It shows app status, screenshots, release paths, safety notes and checksums without publishing private app source, binaries or local station data.
+The portal is static and public. It shows app status, screenshots, release paths, safety notes and checksums without publishing release binaries or local station data inside this catalog repository.
+
+Some micro app repositories are public for transparency and distribution, but that does not automatically make them open source. Check each app license before reuse.
 
 When a release already has a Windows executable, the app card and detail page expose a direct `Download EXE` link. Private app downloads can still require GitHub access.
 
@@ -41,7 +43,8 @@ It does not contain release binaries, private source code, radio logs, ADIF file
 
 | App | Purpose | Source | Channel |
 | --- | --- | --- | --- |
-| `6SNT.CPT` | CAT Port Guardian, read-only COM/CAT preflight for Windows | Private | Private release |
+| `6SNT.CPT` | CAT Port Guardian, read-only COM/CAT preflight for Windows | Public repo / Proprietary | Public release |
+| `6SNT.ACD` | Audio Chain Doctor, read-only audio-chain preflight and meter for Windows | Public repo / Proprietary | Public prerelease |
 | `6SNT.UADL` | USB Audio Device Lock, read-only USB audio preflight for Windows | Private | Private prerelease |
 | `6SNT.ADIF-HUB` | Local log cleanup and export staging | Public | Public prerelease |
 

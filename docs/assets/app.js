@@ -15,11 +15,11 @@ const COPY = {
     heroCopy: "Small local-first tools for station preflight, diagnostics and data cleanup. Each app has one job, clear safety limits and a Windows-first build path.",
     meta: ["Local-first", "No telemetry", "AS IS distribution"],
     catalogTitle: "Catalog",
-    catalogCopy: "Current apps and release channels. Private source means the code repository requires access; release availability is listed per app.",
+    catalogCopy: "Current apps and release channels. Public repo means the code is visible, but the app may still be proprietary unless its license says otherwise.",
     roadmapTitle: "Next tools",
     roadmapCopy: "The backlog is intentionally small and operational: each tool should solve one station problem without becoming a platform.",
     policyTitle: "Distribution policy",
-    policyCopy: "Apps are distributed AS IS, without warranty and without any promise of future versions, maintenance or compatibility. The portal can be public while individual app repositories remain private.",
+    policyCopy: "Apps are distributed AS IS, without warranty and without any promise of future versions, maintenance or compatibility. Public repository visibility does not automatically mean an open-source license.",
     details: "Details",
     download: "Download EXE",
     release: "Release",
@@ -31,7 +31,7 @@ const COPY = {
     notFor: "Not for",
     back: "Back to catalog",
     footer: "6SNT.RADIO - local-first radio tools",
-    filters: ["All", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Private source", "Public source"]
+    filters: ["All", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Public repo", "Private source", "Public source"]
   },
   es: {
     catalogFile: "../data/apps.es.json",
@@ -49,11 +49,11 @@ const COPY = {
     heroCopy: "Herramientas pequeñas y local-first para preflight de estación, diagnóstico y limpieza de datos. Cada app tiene una tarea, límites de seguridad claros y build Windows.",
     meta: ["Local-first", "Sin telemetría", "Distribución AS IS"],
     catalogTitle: "Catálogo",
-    catalogCopy: "Apps actuales y canales de release. Fuente privada significa que el repositorio requiere acceso; la disponibilidad de descarga se indica por app.",
+    catalogCopy: "Apps actuales y canales de release. Repo público significa que el código es visible, pero la app puede seguir siendo propietaria salvo que su licencia indique otra cosa.",
     roadmapTitle: "Siguientes herramientas",
     roadmapCopy: "El backlog es pequeño y operativo: cada herramienta debe resolver un problema de estación sin convertirse en plataforma.",
     policyTitle: "Política de distribución",
-    policyCopy: "Las apps se distribuyen AS IS, sin garantía y sin promesa de versiones futuras, mantenimiento o compatibilidad. El portal puede ser público mientras los repositorios de app siguen privados.",
+    policyCopy: "Las apps se distribuyen AS IS, sin garantía y sin promesa de versiones futuras, mantenimiento o compatibilidad. Que un repositorio sea público no significa automáticamente que tenga licencia open-source.",
     details: "Detalles",
     download: "Descargar EXE",
     release: "Release",
@@ -65,7 +65,7 @@ const COPY = {
     notFor: "No es para",
     back: "Volver al catálogo",
     footer: "6SNT.RADIO - herramientas local-first para radio",
-    filters: ["Todo", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Fuente privada", "Fuente pública"]
+    filters: ["Todo", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Repo público", "Fuente privada", "Fuente pública"]
   }
 };
 

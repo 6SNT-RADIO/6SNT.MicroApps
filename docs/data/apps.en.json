@@ -10,8 +10,8 @@
       "stage": "Stable",
       "version": "v0.1.0",
       "platform": "Windows",
-      "source": "Private source",
-      "distribution": "Private release",
+      "source": "Public repo",
+      "distribution": "Public release",
       "license": "Proprietary",
       "accent": "green",
       "summary": "Read-only COM/CAT preflight guardian for Windows radio stations.",
@@ -90,6 +90,49 @@
       }
     },
     {
+      "id": "acd",
+      "name": "6SNT.ACD",
+      "subtitle": "Audio Chain Doctor",
+      "category": "Audio / Windows",
+      "stage": "Preview",
+      "version": "v0.1.0",
+      "platform": "Windows",
+      "source": "Public repo",
+      "distribution": "Public prerelease",
+      "license": "Proprietary",
+      "accent": "green",
+      "summary": "Read-only audio chain preflight and live meter for Windows radio stations.",
+      "description": "Reads the selected Windows audio input, shows RMS level, VU, waveform, peak and clipping state, and lets the operator verify the local audio path before a session.",
+      "notFor": "Not a mixer, audio router, driver manager or radio controller. It does not key PTT, control a transceiver or change Windows audio routing.",
+      "features": [
+        "Read-only live input meter",
+        "Input and output endpoint selectors",
+        "VU, waveform, peak and clipping checks",
+        "EN/ES switch inside the app",
+        "Confirmed short local 1 kHz tone test"
+      ],
+      "safety": [
+        "Does not change Windows default audio devices",
+        "Does not change volume, sample rate or routing",
+        "Does not send CAT, PTT, TUNE, TX, CW or macros",
+        "Tone test requires explicit operator confirmation"
+      ],
+      "links": {
+        "details": "./apps/acd/",
+        "repository": "https://github.com/6SNT-RADIO/6SNT.ACD",
+        "release": "https://github.com/6SNT-RADIO/6SNT.ACD/releases/tag/v0.1.0",
+        "downloadExe": "https://github.com/6SNT-RADIO/6SNT.ACD/releases/download/v0.1.0/6SNT.ACD.exe"
+      },
+      "assets": {
+        "icon": "assets/apps/acd/icon.png",
+        "screenshot": "assets/apps/acd/screenshot.png"
+      },
+      "sha256": {
+        "exe": "6A542CFCCA11AB735AD702919493352BBD2D2CA285B9EB90DBD6E77B2F4910FA",
+        "zip": ""
+      }
+    },
+    {
       "id": "adif-hub",
       "name": "6SNT.ADIF-HUB",
       "subtitle": "Local log cleanup hub",
@@ -134,7 +177,6 @@
   ],
   "roadmap": [
     "UDP Packet Inspector",
-    "Audio Chain Doctor",
     "RF Noise Fingerprint",
     "SWR Snapshot Tile",
     "RFI Breaker Hunt",
