@@ -29,6 +29,8 @@ https://6snt-radio.github.io/6SNT.MicroApps/es/
 
 The portal is static and public. It shows app status, screenshots, release paths, safety notes and checksums without publishing private app source, binaries or local station data.
 
+When a release already has a Windows executable, the app card and detail page expose a direct `Download EXE` link. Private app downloads can still require GitHub access.
+
 ## What This Is Not
 
 This repository is not a monorepo for every app.
@@ -40,6 +42,7 @@ It does not contain release binaries, private source code, radio logs, ADIF file
 | App | Purpose | Source | Channel |
 | --- | --- | --- | --- |
 | `6SNT.CPT` | CAT Port Guardian, read-only COM/CAT preflight for Windows | Private | Private release |
+| `6SNT.UADL` | USB Audio Device Lock, read-only USB audio preflight for Windows | Private | Private prerelease |
 | `6SNT.ADIF-HUB` | Local log cleanup and export staging | Public | Public prerelease |
 
 ## Safety Model
@@ -74,6 +77,8 @@ Open:
 http://127.0.0.1:4173/
 http://127.0.0.1:4173/es/
 http://127.0.0.1:4173/apps/cpt/
+http://127.0.0.1:4173/apps/uadl/
+http://127.0.0.1:4173/apps/adif-hub/
 ```
 
 ## Troubleshooting
@@ -84,7 +89,7 @@ If screenshots are missing, keep asset paths relative to the `docs/` root inside
 
 If GitHub Pages shows an older version, wait for the Pages build to finish and hard-refresh the browser.
 
-If a release link asks for access, the app may be private by design. The portal can be public while individual repositories remain restricted.
+If a release or direct download link asks for access, the app may be private by design. The portal can be public while individual repositories and release assets remain restricted.
 
 ## Publishing
 

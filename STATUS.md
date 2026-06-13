@@ -7,6 +7,9 @@ Done:
 - Static GitHub Pages structure created under `docs/`.
 - English primary catalog and Spanish optional catalog created.
 - `6SNT.CPT` and `6SNT.ADIF-HUB` added as initial entries.
+- `6SNT.UADL` added with English/Spanish catalog metadata, detail pages and safe assets.
+- `6SNT.ADIF-HUB` converted to an internal Micro Apps detail page at `/apps/adif-hub/` and `/es/apps/adif-hub/`.
+- Direct `Download EXE` links added for apps with published executable assets.
 - Safe screenshots and icon assets added.
 - JSON catalog model added for future microapps.
 - 6SNT.CPT detail pages added in English and Spanish.

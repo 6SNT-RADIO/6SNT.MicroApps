@@ -21,6 +21,7 @@ const COPY = {
     policyTitle: "Distribution policy",
     policyCopy: "Apps are distributed AS IS, without warranty and without any promise of future versions, maintenance or compatibility. The portal can be public while individual app repositories remain private.",
     details: "Details",
+    download: "Download EXE",
     release: "Release",
     repo: "Repository",
     accessNote: "Distributed AS IS. Access may be restricted for private-source tools, and future versions are not promised.",
@@ -30,7 +31,7 @@ const COPY = {
     notFor: "Not for",
     back: "Back to catalog",
     footer: "6SNT.RADIO - local-first radio tools",
-    filters: ["All", "CAT / Serial", "Logbook / ADIF", "Private source", "Public source"]
+    filters: ["All", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Private source", "Public source"]
   },
   es: {
     catalogFile: "../data/apps.es.json",
@@ -54,6 +55,7 @@ const COPY = {
     policyTitle: "Política de distribución",
     policyCopy: "Las apps se distribuyen AS IS, sin garantía y sin promesa de versiones futuras, mantenimiento o compatibilidad. El portal puede ser público mientras los repositorios de app siguen privados.",
     details: "Detalles",
+    download: "Descargar EXE",
     release: "Release",
     repo: "Repositorio",
     accessNote: "Distribuido AS IS. El acceso puede estar restringido en herramientas con fuente privada y no se prometen versiones futuras.",
@@ -63,7 +65,7 @@ const COPY = {
     notFor: "No es para",
     back: "Volver al catálogo",
     footer: "6SNT.RADIO - herramientas local-first para radio",
-    filters: ["Todo", "CAT / Serial", "Logbook / ADIF", "Fuente privada", "Fuente pública"]
+    filters: ["Todo", "CAT / Serial", "Audio / Windows", "Logbook / ADIF", "Fuente privada", "Fuente pública"]
   }
 };
 
@@ -154,6 +156,7 @@ function appCard(app, copy) {
   const icon = app.assets.icon
     ? `<img class="app-icon" src="${assetPath(app.assets.icon)}" alt="">`
     : `<div class="fallback-icon">${app.name.split(".").pop().slice(0, 2)}</div>`;
+  const downloadLink = app.links.downloadExe ? `<a class="mini-link strong" href="${app.links.downloadExe}">${copy.download}</a>` : "";
   return `
     <article class="app-card">
       <a class="app-shot" href="${app.links.details}"><img src="${assetPath(app.assets.screenshot)}" alt="${app.name} screenshot"></a>
@@ -170,6 +173,7 @@ function appCard(app, copy) {
           <span class="chip">${app.license}</span>
         </div>
         <div class="app-actions">
+          ${downloadLink}
           <a class="mini-link" href="${app.links.details}">${copy.details}</a>
           <a class="mini-link" href="${app.links.release}">${copy.release}</a>
           <a class="mini-link" href="${app.links.repository}">${copy.repo}</a>
@@ -209,6 +213,15 @@ async function renderDetail() {
   document.querySelector("[data-app-features]").innerHTML = app.features.map((item) => `<li>${item}</li>`).join("");
   document.querySelector("[data-app-safety]").innerHTML = app.safety.map((item) => `<li>${item}</li>`).join("");
   document.querySelector("[data-app-notfor]").textContent = app.notFor;
+  const downloadLink = document.querySelector("[data-download-link]");
+  if (downloadLink) {
+    if (app.links.downloadExe) {
+      downloadLink.href = app.links.downloadExe;
+      downloadLink.hidden = false;
+    } else {
+      downloadLink.hidden = true;
+    }
+  }
   document.querySelector("[data-release-link]").href = app.links.release;
   document.querySelector("[data-repo-link]").href = app.links.repository;
   document.querySelector("[data-sha-exe]").textContent = app.sha256.exe || "-";

@@ -32,7 +32,9 @@
       "links": {
         "details": "./apps/cpt/",
         "repository": "https://github.com/6SNT-RADIO/6SNT.CPT",
-        "release": "https://github.com/6SNT-RADIO/6SNT.CPT/releases/tag/v0.1.0"
+        "release": "https://github.com/6SNT-RADIO/6SNT.CPT/releases/tag/v0.1.0",
+        "downloadExe": "https://github.com/6SNT-RADIO/6SNT.CPT/releases/download/v0.1.0/6SNT.CPT.exe",
+        "downloadZip": "https://github.com/6SNT-RADIO/6SNT.CPT/releases/download/v0.1.0/6SNT.CPT-0.1.0-win-x64.zip"
       },
       "assets": {
         "icon": "assets/apps/cpt/icon.png",
@@ -41,6 +43,50 @@
       "sha256": {
         "exe": "7EE7183913475C514BF07DF124AB10BF827A005DD48EC6B7A0FD164B79056DEF",
         "zip": "621EA2F1DA2651B5CCFBA66F33955ECD49264A53F429033BA248822C4A82A7F0"
+      }
+    },
+    {
+      "id": "uadl",
+      "name": "6SNT.UADL",
+      "subtitle": "USB Audio Device Lock",
+      "category": "Audio / Windows",
+      "stage": "Preview",
+      "version": "v0.1.0",
+      "platform": "Windows",
+      "source": "Fuente privada",
+      "distribution": "Prerelease privado",
+      "license": "Propietario",
+      "accent": "green",
+      "summary": "Preflight read-only de audio USB para estaciones Windows.",
+      "description": "Revisa si la entrada, salida, niveles, frecuencia de muestreo y canales esperados del USB Audio CODEC siguen en su lugar antes de una sesión digital.",
+      "notFor": "No es router de audio, mixer, administrador de drivers ni herramienta de automatización. No cambia dispositivos, volumen, sample rate ni configuración de audio de Windows.",
+      "features": [
+        "Chequeo de perfil input/output USB Audio CODEC",
+        "Comparación de volumen de entrada y salida",
+        "Preflight de sample rate y canales",
+        "Informe de diagnóstico copiable",
+        "Mini widget flotante de estado"
+      ],
+      "safety": [
+        "Read-only por diseño",
+        "No transmite audio",
+        "No cambia configuración de sonido de Windows",
+        "No ejecuta PTT, TUNE, TX, CW ni macros"
+      ],
+      "links": {
+        "details": "./apps/uadl/",
+        "repository": "https://github.com/6SNT-RADIO/6SNT.UADL",
+        "release": "https://github.com/6SNT-RADIO/6SNT.UADL/releases/tag/v0.1.0",
+        "downloadExe": "https://github.com/6SNT-RADIO/6SNT.UADL/releases/download/v0.1.0/6SNT.UADL.exe",
+        "downloadZip": "https://github.com/6SNT-RADIO/6SNT.UADL/releases/download/v0.1.0/6SNT.UADL-0.1.0-win-x64.zip"
+      },
+      "assets": {
+        "icon": "assets/apps/uadl/icon.png",
+        "screenshot": "assets/apps/uadl/screenshot.png"
+      },
+      "sha256": {
+        "exe": "2AF81C58C0B3027B0198555E9120CCFA0E1665789A6911002B4A49C7F574822A",
+        "zip": "06D660569BBFB25AD352856A80D4262787E5B1FD4EA73CC7D264A61278A99AD8"
       }
     },
     {
@@ -71,12 +117,13 @@
         "Sin sincronización cloud durante operación normal"
       ],
       "links": {
-        "details": "https://6snt-radio.github.io/6SNT.ADIF-HUB/es/",
+        "details": "./apps/adif-hub/",
         "repository": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB",
-        "release": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB/releases/tag/v0.1.0-beta"
+        "release": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB/releases/tag/v0.1.0-beta",
+        "downloadExe": "https://github.com/6SNT-RADIO/6SNT.ADIF-HUB/releases/download/v0.1.0-beta/6SNT.ADIF-HUB.exe"
       },
       "assets": {
-        "icon": "",
+        "icon": "assets/apps/adif-hub/icon.png",
         "screenshot": "assets/apps/adif-hub/screenshot.png"
       },
       "sha256": {
@@ -87,7 +134,6 @@
   ],
   "roadmap": [
     "UDP Packet Inspector",
-    "USB Audio Device Lock",
     "Audio Chain Doctor",
     "RF Noise Fingerprint",
     "SWR Snapshot Tile",
