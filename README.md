@@ -48,6 +48,12 @@ Radio-facing tools start read-only. A catalog entry must state whether the app c
 
 Anything capable of PTT, TUNE, TX, CW, audio transmit or unattended automation must be documented as an explicit operator action with clear limits in the app repository before it is listed here.
 
+## Distribution
+
+Tools listed here are provided AS IS, without warranty and without any promise of future versions, maintenance, support or compatibility.
+
+Use them on copies of important data first, verify behavior in your own station environment and keep backups before relying on any workflow.
+
 ## Adding An App
 
 1. Add sanitized screenshots under `docs/assets/apps/<id>/`.

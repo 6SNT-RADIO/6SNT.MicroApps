@@ -15,6 +15,7 @@ Done:
 - Repository published at `https://github.com/6SNT-RADIO/6SNT.MicroApps`.
 - GitHub Pages enabled from `main:/docs`.
 - Public Pages verified at `https://6snt-radio.github.io/6SNT.MicroApps/`.
+- AS IS / no future-version promise added to portal copy and detail notices.
 
 Pending:
 
